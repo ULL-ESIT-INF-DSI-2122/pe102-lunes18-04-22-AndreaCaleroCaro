@@ -1,7 +1,6 @@
 {
     "extension": ["ts"],
-    "spec": ["tests/**/artistas.spec.ts",
-        "tests/**/cancion.spec.ts"
+    "spec": ["tests/**/ejercicio.spec.ts"
     ],
     "require": "ts-node/register"
 }
