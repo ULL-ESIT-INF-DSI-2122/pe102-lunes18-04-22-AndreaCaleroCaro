@@ -2,27 +2,30 @@ import {Reduce} from './reduce';
 
 /**
  * @class SubReduce subclase hija que extiende del Reduce 
- * esta implementa la reducción del array mediante la suma
+ * esta implementa la reducción del array mediante la resta
  */
 export class SubReduce extends Reduce {
     constructor(protected arrayIn: number []) {
       super(arrayIn);
     }
 
-    protected subReduce(arrayIn: number[]) {
-        let sum: number = 0
-        let arrayAux: number[] = [];
+    /**
+     * @method subReduce() implementa la reducción mediante la resta
+     * @param arrayIn 
+     */
+    public subReduce(arrayIn: number[]) {
+        let sub: number = 0
         for(let i: number = 0; i < arrayIn.length; i++){
             let valorAnterior = arrayIn[i-1];
             let valorActual = arrayIn[i];
-            sum = valorAnterior - valorActual
+            sub = valorAnterior - valorActual
         }
-        console.log(sum);
-
+        console.log(sub);
+        return sub;
     }
 }
 
 
 let arrayIn: number[] = [4,3];
 let array = new SubReduce(arrayIn);
-array.run()
+array.subReduce(arrayIn)

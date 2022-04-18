@@ -47,14 +47,9 @@ export abstract class Reduce {
     });
   }
 
-  /*protected addReduce(arrayIn: number[]) {
-    let sum: number = 0
-    for(let i: number = 0; i < arrayIn.length; i++){
-        sum += arrayIn[i];
-    }
-    console.log(sum);
-  }*/
-
+  /**
+   * Métodos protegidos que se implementan en las subclases
+   */
   protected addReduce(arrayIn) {}
   protected subReduce(arrayIn) {}
   protected prodReduce() {}

@@ -9,16 +9,17 @@ export class AddReduce extends Reduce {
       super(arrayIn);
     }
 
-    protected addReduce(arrayIn: number[]) {
+    public addReduce(arrayIn: number[]) {
         let sum: number = 0
         for(let i: number = 0; i < arrayIn.length; i++){
             sum += arrayIn[i];
         }
         console.log(sum);
+        return sum;
     }
 }
 
 
 let arrayIn: number[] = [1,2,3,4];
 let array = new AddReduce(arrayIn);
-array.run()
+array.addReduce(arrayIn)
