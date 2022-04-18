@@ -28,4 +28,7 @@ export class SubReduce extends Reduce {
 
 let arrayIn: number[] = [4,3];
 let array = new SubReduce(arrayIn);
+console.log('Array a evaluar: ['+arrayIn+']');
 array.subReduce(arrayIn)
+console.log('\nTemplate Method: ');
+array.run()

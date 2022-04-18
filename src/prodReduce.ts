@@ -28,4 +28,7 @@ export class ProdReduce extends Reduce {
 
 let arrayIn: number[] = [2,3];
 let array = new ProdReduce(arrayIn);
+console.log('Array a evaluar: ['+arrayIn+']');
 array.prodReduce(arrayIn)
+console.log('\nTemplate Method: ');
+array.run()

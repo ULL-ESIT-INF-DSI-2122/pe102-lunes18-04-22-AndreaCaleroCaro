@@ -28,4 +28,7 @@ export class DivReduce extends Reduce {
 
 let arrayIn: number[] = [20,2,5];
 let array = new DivReduce(arrayIn);
+console.log('Array a evaluar: ['+arrayIn+']');
 array.divReduce(arrayIn)
+console.log('\nTemplate Method: ');
+array.run()

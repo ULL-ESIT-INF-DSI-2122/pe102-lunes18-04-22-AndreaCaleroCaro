@@ -22,4 +22,7 @@ export class AddReduce extends Reduce {
 
 let arrayIn: number[] = [1,2,3,4];
 let array = new AddReduce(arrayIn);
+console.log('Array a evaluar: ['+arrayIn+']');
 array.addReduce(arrayIn)
+console.log('\nTemplate Method: ');
+array.run()

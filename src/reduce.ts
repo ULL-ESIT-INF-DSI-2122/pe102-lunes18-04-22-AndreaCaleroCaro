@@ -41,7 +41,7 @@ export abstract class Reduce {
    * @method evalValuesBefore evalua el array inicialpara reducirlo
    */
   protected evalValuesBefore() {
-    console.log('Template: Evaluando el array inicial');
+    console.log('Template: Evaluando el array con la operacion');
     this.arrayAux.forEach((operacion) => {
       operacion.arrayIn;
     });
@@ -55,6 +55,6 @@ export abstract class Reduce {
   protected prodReduce(arrayIn) {}
   protected divReduce(arrayIn) {}
   //protected evalValuesAfter() {}
-
-
 }
+
+
