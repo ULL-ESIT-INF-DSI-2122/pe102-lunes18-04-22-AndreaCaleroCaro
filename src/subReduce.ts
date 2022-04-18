@@ -23,6 +23,13 @@ export class SubReduce extends Reduce {
         console.log(sub);
         return sub;
     }
+
+     /**
+     * Hook del final de evaluación
+     */
+    protected evalValuesAfter(){
+        console.log('\nFin evaluación');
+    } 
 }
 
 

@@ -9,6 +9,10 @@ export class AddReduce extends Reduce {
       super(arrayIn);
     }
 
+    /**
+     * @method addReduce() implementa la reducción mediante la suma
+     * @param arrayIn 
+     */
     public addReduce(arrayIn: number[]) {
         let sum: number = 0
         for(let i: number = 0; i < arrayIn.length; i++){
@@ -17,6 +21,13 @@ export class AddReduce extends Reduce {
         console.log(sum);
         return sum;
     }
+
+    /**
+     * Hook del final de evaluación
+     */
+    protected evalValuesAfter(){
+        console.log('\nFin evaluación');
+    } 
 }
 
 

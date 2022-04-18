@@ -23,6 +23,13 @@ export class DivReduce extends Reduce {
         console.log(div);
         return div;
     }
+
+     /**
+     * Hook del final de evaluación
+     */
+    protected evalValuesAfter(){
+        console.log('\nFin evaluación');
+    } 
 }
 
 

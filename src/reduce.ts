@@ -33,6 +33,7 @@ export abstract class Reduce {
     this.subReduce(this.arrayIn);
     this.prodReduce(this.arrayIn);
     this.divReduce(this.arrayIn);
+    this.evalValuesAfter();
   }
 
   /**
@@ -53,6 +54,15 @@ export abstract class Reduce {
   protected prodReduce(arrayIn) {}
   protected divReduce(arrayIn) {}
 
+  /**
+   * @method evalValuesAfter evalua final
+   */
+   protected evalValuesAfter() {
+    console.log('Template: Finalizacion evaluacion');
+    this.arrayAux.forEach((operacion) => {
+      operacion.reduce;
+    });
+  }
 }
 
 

@@ -23,6 +23,13 @@ export class ProdReduce extends Reduce {
         console.log(prod);
         return prod;
     }
+
+     /**
+     * Hook del final de evaluación
+     */
+    protected evalValuesAfter(){
+        console.log('\nFin evaluación');
+    } 
 }
 
 
