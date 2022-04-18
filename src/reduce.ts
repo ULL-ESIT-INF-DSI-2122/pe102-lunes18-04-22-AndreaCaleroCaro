@@ -36,7 +36,7 @@ export abstract class Reduce {
   }
 
   /**
-   * @method evalValuesBefore evalua el array inicialpara reducirlo
+   * @method evalValuesBefore evalua el array inicial para reducirlo
    */
   protected evalValuesBefore() {
     console.log('Template: Evaluando el array con la operacion');
