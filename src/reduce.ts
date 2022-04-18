@@ -10,7 +10,7 @@
  */
 type Operacion = {
   arrayIn: number [];
-  reduce: () => void;
+  reduce: () => number;
 }
 
 /**
@@ -33,8 +33,6 @@ export abstract class Reduce {
     this.subReduce(this.arrayIn);
     this.prodReduce(this.arrayIn);
     this.divReduce(this.arrayIn);
-    //this.evalValuesAfter();
-    
   }
 
   /**
@@ -43,7 +41,7 @@ export abstract class Reduce {
   protected evalValuesBefore() {
     console.log('Template: Evaluando el array con la operacion');
     this.arrayAux.forEach((operacion) => {
-      operacion.arrayIn;
+      operacion.reduce;
     });
   }
 
@@ -54,7 +52,7 @@ export abstract class Reduce {
   protected subReduce(arrayIn) {}
   protected prodReduce(arrayIn) {}
   protected divReduce(arrayIn) {}
-  //protected evalValuesAfter() {}
+
 }
 
 
