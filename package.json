@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.0.1",
     "flatted": "^3.2.5",
     "inquirer": "^8.2.2",
-    "tsc": "^2.0.4"
+    "tsc": "^2.0.4",
+    "yargs": "^17.1.1-candidate.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",

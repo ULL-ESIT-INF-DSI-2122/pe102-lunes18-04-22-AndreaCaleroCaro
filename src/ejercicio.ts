@@ -1,33 +1,50 @@
 /**
- * Adds two numbers
- * @param firstNumber Consists of the first numeric operand of the addition
- * @param secondNumber Consists of the second numeric operand of the addition
- * @return The addition of the two numbers `firstNumber` and `secondNumber`
- *
- * Usage:
- * ```typescript
- * add(1, 7) = 8
- * add(1.7, 3.5) = 5.2
- * ```
+ * PE 102 Lunes 18 de abril 2022
+ * Alumna: Andrea Calero Caro
+ * Objetivo: implementar la clase Reduce mediante el Template Method
  */
- export function add(firstNumber: number, secondNumber: number) {
-    return firstNumber + secondNumber;
-  }
-  
-  /**
-   * Substracts two numbers
-   * @param firstNumber Consists of the first numeric operand of the substraction
-   * @param secondNumber Consists of the second numeric operand of the substraction
-   * @return The substraction of the two numbers `firstNumber` and `secondNumber`
-   *
-   * Usage:
-   * ```typescript
-   * substract(7, 1) = 6
-   * substract(8.6, 3.3) = 5.3
-   * ```
-   */
-  export function substract(firstNumber: number, secondNumber: number) {
-    return firstNumber - secondNumber;
+
+/**
+ * @type Operacion con el array de entrada tipo number (arrayIn) 
+ * y el método a implementar 
+ */
+type Operacion = {
+  arrayIn: number [];
+  reduce: () => void;
+}
+
+/**
+ * @class Reduce reduce el array de números en uno solo
+ */
+abstract class Reduce {
+  protected arrayAux: Operacion[];
+
+  constructor(protected arrayIn: number []) {
+    this.arrayAux = [];
   }
 
-  console.log('Funciona')
+  /**
+   * @method run() este establece los distintos métodos comunes para reducir el número
+   * del array
+   */
+  public run() {
+    this.evalValuesBefore();
+    //this.addReduce();
+    //this.subReduce();
+    //this.prodReduce();
+    //this.divReduce();
+    //this.evalValuesAfter();
+  }
+
+  /**
+   * @method evalValuesBefore evalua el array inicialpara reducirlo
+   */
+  protected evalValuesBefore() {
+    console.log('Template: Evaluando el array inicial');
+    this.arrayAux.forEach((operacion) => {
+      operacion.reduce();
+    });
+  }
+
+
+}
