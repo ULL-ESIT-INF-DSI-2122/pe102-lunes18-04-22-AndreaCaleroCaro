@@ -1,6 +1,8 @@
 {
     "entryPoints": [
-        "./src/index.ts"
+        "./src/addReduce.ts",
+        "./src/reduce.ts",
+        "./src/subReduce.ts"
     ],
     "out": "./docs"
 }

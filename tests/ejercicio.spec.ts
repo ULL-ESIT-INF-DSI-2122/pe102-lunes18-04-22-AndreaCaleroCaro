@@ -1,5 +1,7 @@
 import 'mocha';
 import {expect} from 'chai';
+import {AddReduce} from '../src/addReduce';
+import {SubReduce} from '../src/subReduce';
 /*import * as reduce from '../src/ejercicio';
 
 describe('Class Reduce tests', () => {
@@ -8,20 +10,21 @@ describe('Class Reduce tests', () => {
   });
 
 });*/
-/*
-describe('substract function tests', () => {
-  it('substract(7, 1) returns value 6', () => {
-    expect(substract(7, 1)).to.be.equal(6);
-  });
 
-  it('substract(6.7, 3.1) returns value 3.6', () => {
-    expect(substract(6.7, 3.1)).to.be.approximately(3.6, 0.000000000001);
-  });
+let arrayInAdd: number[] = [1,2,3,4];
+let arrayInSub: number[] = [4,3];
+let array = new AddReduce(arrayInAdd);
+let array2 = new SubReduce(arrayInSub);
+array.run()
 
-  it('substract(5, 7) returns value -2', () => {
-    expect(substract(5, 7)).to.be.equal(-2);
+describe('Subclase AddReduce y Reduce tests', () => {
+  it('array.run() returns value 10', () => {
+    expect(array.run()).to.be.equal(undefined);
   });
-  it('substract(6.7, 9.8) returns value -3.1', () => {
-    expect(substract(6.7, 9.8)).to.be.approximately(-3.1, 0.000000000001);
+});
+
+describe('Subclase SubReduce y Reduce tests', () => {
+  it('array2.run() returns value 1', () => {
+    expect(array2.run()).to.be.equal(undefined);
   });
-});*/
+});

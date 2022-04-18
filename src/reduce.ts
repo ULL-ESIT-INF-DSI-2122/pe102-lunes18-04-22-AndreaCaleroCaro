@@ -16,7 +16,7 @@ type Operacion = {
 /**
  * @class Reduce reduce el array de números en uno solo
  */
-abstract class Reduce {
+export abstract class Reduce {
   protected arrayAux: Operacion[];
 
   constructor(protected arrayIn: number []) {
@@ -29,11 +29,12 @@ abstract class Reduce {
    */
   public run() {
     this.evalValuesBefore();
-    //this.addReduce();
-    //this.subReduce();
-    //this.prodReduce();
-    //this.divReduce();
+    this.addReduce(this.arrayIn);
+    this.subReduce(this.arrayIn);
+    this.prodReduce();
+    this.divReduce();
     //this.evalValuesAfter();
+    
   }
 
   /**
@@ -42,9 +43,23 @@ abstract class Reduce {
   protected evalValuesBefore() {
     console.log('Template: Evaluando el array inicial');
     this.arrayAux.forEach((operacion) => {
-      operacion.reduce();
+      operacion.arrayIn;
     });
   }
+
+  /*protected addReduce(arrayIn: number[]) {
+    let sum: number = 0
+    for(let i: number = 0; i < arrayIn.length; i++){
+        sum += arrayIn[i];
+    }
+    console.log(sum);
+  }*/
+
+  protected addReduce(arrayIn) {}
+  protected subReduce(arrayIn) {}
+  protected prodReduce() {}
+  protected divReduce() {}
+  //protected evalValuesAfter() {}
 
 
 }
