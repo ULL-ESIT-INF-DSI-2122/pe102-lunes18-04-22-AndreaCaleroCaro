@@ -3,7 +3,8 @@
         "./src/addReduce.ts",
         "./src/reduce.ts",
         "./src/subReduce.ts",
-        "./src/prodReduce.ts"
+        "./src/prodReduce.ts",
+        "./src/divReduce.ts"
     ],
     "out": "./docs"
 }
