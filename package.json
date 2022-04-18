@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prod": "tsc-watch --onSuccess \"node dist/prodReduce.js\"",
     "sub": "tsc-watch --onSuccess \"node dist/subReduce.js\"",
     "add": "tsc-watch --onSuccess \"node dist/addReduce.js\"",
     "start": "tsc-watch --onSuccess \"node dist/reduce.js\"",
