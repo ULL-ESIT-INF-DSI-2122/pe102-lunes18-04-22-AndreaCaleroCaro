@@ -8,7 +8,7 @@ import {DivReduce} from '../src/divReduce';
 let arrayInAdd: number[] = [1,2,3,4];
 let arrayInSub: number[] = [4,3];
 let arrayInProd: number[] = [2,3];
-let arrayInDiv: number[] = [6,3];
+let arrayInDiv: number[] = [20,2,5];
 let array = new AddReduce(arrayInAdd);
 let array2 = new SubReduce(arrayInSub);
 let array3 = new ProdReduce(arrayInProd);
@@ -34,7 +34,7 @@ describe('Subclase ProdReduce tests', () => {
 });
 
 describe('Subclase DivReduce tests', () => {
-  it('array4.divReduce(arrayInDiv) returns value 2', () => {
-    expect(array4.divReduce(arrayInDiv)).to.be.equal(2);
+  it('array4.divReduce(arrayInDiv) returns value 0.4', () => {
+    expect(array4.divReduce(arrayInDiv)).to.be.equal(0.4);
   });
 });

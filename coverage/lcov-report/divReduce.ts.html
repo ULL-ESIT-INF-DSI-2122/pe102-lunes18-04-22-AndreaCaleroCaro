@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for prodReduce.ts</title>
+    <title>Code coverage report for divReduce.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> prodReduce.ts</h1>
+        <h1><a href="index.html">All files</a> divReduce.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -111,9 +111,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -126,34 +126,34 @@
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import {Reduce} from './reduce';
 &nbsp;
 /**
- * @class ProdReduce subclase hija que extiende del Reduce 
- * esta implementa la reducción del array mediante el producto
+ * @class DivReduce subclase hija que extiende del Reduce 
+ * esta implementa la reducción del array mediante la división
  */
-export class ProdReduce extends Reduce {
+export class DivReduce extends Reduce {
     constructor(protected arrayIn: number []) {
       super(arrayIn);
     }
 &nbsp;
     /**
-     * @method prodReduce() implementa la reducción mediante el producto
+     * @method divReduce() implementa la reducción mediante la división
      * @param arrayIn 
      */
-    public prodReduce(arrayIn: number[]) {
-        let prod: number = 0
+    public divReduce(arrayIn: number[]) {
+        let div: number = 0
         for(let i: number = 0; i &lt; arrayIn.length; i++){
             let valorAnterior = arrayIn[i-1];
             let valorActual = arrayIn[i];
-            prod = valorAnterior * valorActual
+            div = valorAnterior / valorActual
         }
-        console.log(prod);
-        return prod;
+        console.log(div);
+        return div;
     }
 }
 &nbsp;
 &nbsp;
-let arrayIn: number[] = [2,3];
-let array = new ProdReduce(arrayIn);
-array.prodReduce(arrayIn)</pre></td></tr></table></pre>
+let arrayIn: number[] = [20,2,5];
+let array = new DivReduce(arrayIn);
+array.divReduce(arrayIn)</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

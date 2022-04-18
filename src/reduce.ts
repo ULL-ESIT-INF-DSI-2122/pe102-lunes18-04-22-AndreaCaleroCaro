@@ -32,7 +32,7 @@ export abstract class Reduce {
     this.addReduce(this.arrayIn);
     this.subReduce(this.arrayIn);
     this.prodReduce(this.arrayIn);
-    this.divReduce();
+    this.divReduce(this.arrayIn);
     //this.evalValuesAfter();
     
   }
@@ -53,7 +53,7 @@ export abstract class Reduce {
   protected addReduce(arrayIn) {}
   protected subReduce(arrayIn) {}
   protected prodReduce(arrayIn) {}
-  protected divReduce() {}
+  protected divReduce(arrayIn) {}
   //protected evalValuesAfter() {}
 
 

@@ -14,18 +14,18 @@ export class DivReduce extends Reduce {
      * @param arrayIn 
      */
     public divReduce(arrayIn: number[]) {
-        let prod: number = 0
+        let div: number = 0
         for(let i: number = 0; i < arrayIn.length; i++){
             let valorAnterior = arrayIn[i-1];
             let valorActual = arrayIn[i];
-            prod = valorAnterior * valorActual
+            div = valorAnterior / valorActual
         }
-        console.log(prod);
-        return prod;
+        console.log(div);
+        return div;
     }
 }
 
 
-let arrayIn: number[] = [2,3];
-let array = new ProdReduce(arrayIn);
-array.prodReduce(arrayIn)
+let arrayIn: number[] = [20,2,5];
+let array = new DivReduce(arrayIn);
+array.divReduce(arrayIn)
